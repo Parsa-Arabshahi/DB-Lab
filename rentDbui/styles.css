@@ -1,0 +1,78 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffffdd;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+header h1, header h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  background-color: #007BFF;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.menu a:hover {
+  background-color: #0056b3;
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-card label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-card input, .form-card select, .form-card button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form-card button {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-card button:hover {
+  background-color: #218838;
+}

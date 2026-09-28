@@ -1,0 +1,82 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+
+.tabs .active {
+  background-color: #007BFF;
+  color: white;
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-card label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.form-card input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-card button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-card button:hover {
+  background-color: #218838;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login / Sign Up</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+      <button id="login-tab" class="active" onclick="showForm('login')">Login</button>
+      <button id="signup-tab" onclick="showForm('signup')">Sign Up</button>
+    </div>
+
+    <form id="login-form" class="form-card">
+      <h2>Login</h2>
+      <label for="login-email">📧 Email</label>
+      <input type="email" id="login-email" name="email" required>
+      <label for="login-password">🔐 Password</label>
+      <input type="password" id="login-password" name="password" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <form id="signup-form" class="form-card hidden">
+      <h2>Sign Up</h2>
+      <label for="signup-username">👤 Username</label>
+      <input type="text" id="signup-username" name="username" required>
+      <label for="signup-email">📧 Email</label>
+      <input type="email" id="signup-email" name="email" required>
+      <label for="signup-password">🔐 Password</label>
+      <input type="password" id="signup-password" name="password" required>
+      <label for="signup-phone">📱 Phone</label>
+      <input type="tel" id="signup-phone" name="phone" required>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <script>
+    function showForm(form) {
+      document.getElementById('login-form').classList.add('hidden');
+      document.getElementById('signup-form').classList.add('hidden');
+      document.getElementById('login-tab').classList.remove('active');
+      document.getElementById('signup-tab').classList.remove('active');
+      
+      if (form === 'login') {
+        document.getElementById('login-form').classList.remove('hidden');
+        document.getElementById('login-tab').classList.add('active');
+      } else {
+        document.getElementById('signup-form').classList.remove('hidden');
+        document.getElementById('signup-tab').classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>

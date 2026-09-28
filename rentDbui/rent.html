@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rent a Car</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>📝 Rent a Car</h2>
+    </header>
+    <form class="form-card" action="/submit_rental" method="POST">
+      <label for="car">🚘 Choose a Car:</label>
+      <select name="car_id" id="car">
+        <option value="1">Toyota Corolla</option>
+        <option value="2">Honda Civic</option>
+      </select>
+
+      <label for="start_date">📅 Start Date:</label>
+      <input type="date" name="start_date" required>
+
+      <label for="end_date">📅 End Date:</label>
+      <input type="date" name="end_date" required>
+
+      <label for="parking">📍 Pickup Location:</label>
+      <select name="parking_id" id="parking">
+        <option value="1">Lot A</option>
+        <option value="2">Lot B</option>
+      </select>
+
+      <button type="submit">✅ Confirm Rental</button>
+    </form>
+  </div>
+</body>
+</html>
